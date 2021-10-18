@@ -1,5 +1,5 @@
 # ts-nextjs-micrize
-fullstack bolierplate with next.js | 基于 next.js 的全栈模板
+fullstack microservice bolierplate with next.js | 基于 next.js 的微服务全栈模板
 
 ## structure | 文件结构
 

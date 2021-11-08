@@ -1,4 +1,4 @@
-import { services } from "../services"
+import { services } from "../../services"
 
 const Blog = ({ slug, welcome }) => {
   return <div>blog#{slug} |{welcome}</div>

@@ -1,9 +1,9 @@
-import { Link } from '../common/routes'
+import Link from 'next/link'
 
 const Nav = () => {
   return <div>
-    <Link route="/"><a>首页</a></Link> |
-    <Link route="/about"><a>关于</a></Link>
+    <Link href="/"><a>首页</a></Link> |
+    <Link href="/about"><a>关于</a></Link>
   </div>
 }
 

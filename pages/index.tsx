@@ -1,4 +1,4 @@
-import { Link } from "../common/routes"
+import Link from 'next/link'
 import { services } from "../services"
 
 type InitialProps = {
@@ -10,17 +10,17 @@ const Index = ({ welcome = '' }: InitialProps) => {
     <h1>Home!</h1>
     <p>{welcome}</p>
     {[1, 2, 3].map(x => <p key={x}>
-      <Link route={`/blog/${x}`}>{`blog#${x}`}</Link>
+      <Link href={`/blog/${x}`}>{`blog#${x}`}</Link>
     </p>)}
   </div>
 }
 
 export default Index
 
-// export async function getServerSideProps() {
-//   return {
-//     props: {
-//       welcome: await (await services.greeter()).hello('world')
-//     },
-//   }
-// }
+export async function getServerSideProps() {
+  return {
+    props: {
+      welcome: await (await services.greeter()).hello('world')
+    },
+  }
+}

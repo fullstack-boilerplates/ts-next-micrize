@@ -20,7 +20,7 @@ export default Index
 export async function getServerSideProps() {
   return {
     props: {
-      welcome: await (await services.greeter()).hello('world')
+      welcome: await services.greeter.hello('world')
     },
   }
 }

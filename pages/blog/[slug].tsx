@@ -11,7 +11,7 @@ export async function getServerSideProps({ query = {} }) {
   let { slug = '?' } = query as any
   return {
     props: {
-      welcome: await (await services.greeter()).hello(`blog#${slug}`),
+      welcome: await services.greeter.hello(`blog#${slug}`),
       slug
     },
   }

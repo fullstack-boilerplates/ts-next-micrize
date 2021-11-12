@@ -9,7 +9,6 @@ fullstack microservice bolierplate with next.js | 基于 next.js 的微服务全
 +-- pages # nextjs pages | nextjs 页面
 +-- services
     +-- index.ts # expose all services | 统一暴露所有微服务
-    +-- server.ts # nextjs + express custom server | nextjs + express 的定制服务端
     +-- *.ts # other micro services | 其他微服务
 ```
 
